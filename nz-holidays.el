@@ -30,7 +30,7 @@
 ;; (setq holiday-bahai-holidays nil)
 ;; (setq holiday-oriental-holidays nil)
 
-;; (setq calendar-holidays (append calendar-holidays nz-holidays))
+;; (setq calendar-holidays (append holiday-local-holidays holiday-nz-holidays))
 
 ;;; Code:
 ;; ========================================
@@ -38,7 +38,7 @@
   (require 'calendar)
   (require 'holidays))
 
-(defvar nz-holidays--statutory-holidays
+(defvar nz-holidays--statutory
   '((holiday-fixed 1 1 "New Years Day")
     (holiday-fixed 1 2 "Day after New Years")
     (holiday-fixed 2 6 "Waitangi Day")
@@ -50,7 +50,7 @@
     (holiday-fixed 12 25 "Christmas Day")
     (holiday-fixed 12 26 "Boxing Day")))
 
-(defvar nz-holidays--town-anniversary-holidays
+(defvar nz-holidays--town-anniversary
   '((holiday-fixed 1 29 "Auckland Anniversary Day")
     (holiday-fixed 1 23 "Wellington Anniversary Day")
     (holiday-fixed 1 30 "Nelson Anniversary Day")
@@ -63,8 +63,8 @@
     (holiday-fixed 11 17 "Canterbury Anniversary Day")
     (holiday-fixed 12 04 "Westland Anniversary Day")))
 
-(defvar nz-holidays
-  (append nz-holidays--statutory-holidays  nz-holidays--town-anniversary-holidays))
+(defvar holiday-nz-holidays
+  (append nz-holidays--statutory  nz-holidays--town-anniversary))
 
 (provide 'nz-holidays)
 ;;; nz-holidays.el ends here
