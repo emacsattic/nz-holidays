@@ -1,5 +1,4 @@
-;;; nz-holidays.el --- New Zealand public holidays for Emacs calendar.
-
+;;; nz-holidays.el --- New Zealand public holidays for calendar.
 ;; Copyright (C) 2019 Sod Oscarfono
 
 ;; Author: Sod Oscarfono <sod@oscarfono.com>
@@ -31,7 +30,7 @@
 ;; (setq holiday-bahai-holidays nil)
 ;; (setq holiday-oriental-holidays nil)
 
-;; (setq calendar-holidays (append calendar-holidays holiday-nz-holidays))
+;; (setq calendar-holidays (append calendar-holidays nz-holidays))
 
 ;;; Code:
 ;; ========================================
@@ -39,7 +38,7 @@
   (require 'calendar)
   (require 'holidays))
 
-(defvar holiday-nz--statutory-holidays
+(defvar nz-holidays--statutory-holidays
   '((holiday-fixed 1 1 "New Years Day")
     (holiday-fixed 1 2 "Day after New Years")
     (holiday-fixed 2 6 "Waitangi Day")
@@ -51,7 +50,7 @@
     (holiday-fixed 12 25 "Christmas Day")
     (holiday-fixed 12 26 "Boxing Day")))
 
-(defvar holiday-nz--town-anniversary-holidays
+(defvar nz-holidays--town-anniversary-holidays
   '((holiday-fixed 1 29 "Auckland Anniversary Day")
     (holiday-fixed 1 23 "Wellington Anniversary Day")
     (holiday-fixed 1 30 "Nelson Anniversary Day")
@@ -64,8 +63,8 @@
     (holiday-fixed 11 17 "Canterbury Anniversary Day")
     (holiday-fixed 12 04 "Westland Anniversary Day")))
 
-(defvar holiday-nz-holidays
-  (append holiday-nz--statutory-holidays  holiday-nz--town-anniversary-holidays))
+(defvar nz-holidays
+  (append nz-holidays--statutory-holidays  nz-holidays--town-anniversary-holidays))
 
 (provide 'nz-holidays)
 ;;; nz-holidays.el ends here
