@@ -57,7 +57,7 @@
     (holiday-fixed 3 13 "Taranaki Anniversary Day")
     (holiday-fixed 3 20 "Otago Anniversary Day")
     (holiday-fixed 4 18 "Southland Anniversary")
-    (holiday-fixed 9 25 "South Cantebury Anniversary Day")
+    (holiday-fixed 9 25 "South Canterbury Anniversary Day")
     (holiday-fixed 10 20 "Hawkes Bay Anniversary Day")
     (holiday-fixed 10 30 "Marlborough Anniversary Day")
     (holiday-fixed 11 17 "Canterbury Anniversary Day")
